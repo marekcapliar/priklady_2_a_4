@@ -9,8 +9,10 @@ print('pocet hier je:', poc)
 
 fr.seek(0)
 zoz = fr.readlines()
+for i in range(len(zoz)):
+    zoz[i] = len(zoz[i])
 zoz.sort()
-print(len(zoz[-1]))
+print(zoz[-1])
 
 fw = open('text/hada_write.txt', 'w')
 
